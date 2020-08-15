@@ -1,20 +1,20 @@
 <?php
 
-  $_POST;
-
-  $firstName = $_POST['first-name'];
-  $lastName = $_POST['last-name'];
-  $email = $_POST['email'];
-  $phone = $_POST['phone'];
-
-  $to = "email@gmail.com"
-  $subject = .$firstName." ".$lastName. "\r\n"." has just signed up!"
-  $body = "The following person has just signed up:". "\r\n". 
-    "Name: ".$firstName." ".$lastName. "\r\n".
-    "Email: ".$email. "\r\n".
-    "Mobile number: ".$phone;
-
-  mail($to, $subject, $body);
+  if(isset($_POST['email']) && $_POST['email'] != ''){
+    $firstName = $_POST['first-name'];
+    $lastName = $_POST['last-name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+  
+    $to = "info@virtualityconcepts.com";
+    $subject = $firstName." ".$lastName. "\r\n"." just signed up!";
+    $body = "The following person just signed up:". "\r\n"."\r\n". 
+      "Name: ".$firstName." ".$lastName. "\r\n".
+      "Email: ".$email. "\r\n".
+      "Mobile number: ".$phone;
+  
+    mail($to, $subject, $body);
+  } 
 
 ?>
 
