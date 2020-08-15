@@ -1,0 +1,282 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.container {
+  width: 1126px;
+  height: 1682px;
+  background: #1D2129;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.header {
+  min-height: 949px;
+  background: url(./assets/vr.jpg) no-repeat;
+}
+
+.logo {
+  widows: 190px;
+  height: 130px;
+  background: url(./assets/part-2.png) no-repeat;
+  position: relative;
+  top: -1px;
+  left: -1px;
+}
+
+.logo__img {
+  width: 92px;
+  height: 53px;
+  position: relative;
+  top: 15px;
+  left: 15px;
+}
+
+.part-1 {
+  width: 100%;
+  height: 764px;
+  background: url(./assets/part-1.png) no-repeat;
+  position: relative;
+  top: 40px;
+  padding-left: 90px;
+  position: relative;
+}
+
+.part-1__bg {
+  position: absolute;
+  top: 60px;
+  left: -220px;
+}
+
+.attention {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 55px;
+  margin: 0;
+  color: #FFF;
+  background: #E74F1B;
+  font-size: 1.7rem;
+  position: relative;
+  top: 410px;
+}
+
+.attention h2 {
+  margin: 0;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.header-text {
+  font-size: 19px;
+  width: 380px;
+  position: relative;
+  top: 400px;
+  left: 40px;
+  color: #1d2129;
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.join {
+  width: 657px;
+  height: 82px;
+  background: url(./assets/bg-1.png) no-repeat;
+  padding-left: 100px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 324px;
+  left: 544px;
+  z-index: 1;
+}
+
+.join p {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #1d2129;
+}
+.join a {
+  color: #FFF;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+section {
+  padding: 0 40px;
+  color: #FFF;
+}
+
+h3 {
+  margin: 0;
+}
+
+.discover {
+  display: flex;
+}
+
+.discover .left {
+  width: 60%;
+}
+
+.quote {
+  font-style: italic;
+}
+
+
+.right {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 230px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #171A20; 
+  border-radius: 25px;
+}
+
+input {
+  border: 0;
+  height: 41px;
+  color: #999;
+  padding-left: 1.6rem;
+  margin-bottom: 10px;
+}
+
+input::placeholder {
+  color: #AAA;
+}
+
+#first-name,
+#last-name {
+  width: 93px;
+  background: url(./assets/name-field.png) no-repeat;
+}
+
+#email {
+  width: 193px;
+  padding-left: 2rem;
+  background: url(./assets/email-field.png) no-repeat;
+}
+
+#phone {
+  width: 193px;
+  padding-left: 2rem;
+  background: url(./assets/phone-field.png) no-repeat;
+}
+
+.submit {
+  width: 193px;
+  height: 41px;
+  border: 0;
+  border-radius: 25px;
+  color: #FFF;
+  background: #ff0007;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.devider {
+  width: 2px;
+  background: #e74f1c;
+}
+
+.features .left,
+.features .right {
+  width: 45%;
+  display: block;
+}
+
+.features .left h3 {
+  font-size: 24px;
+  color: #E74F1C;
+}
+
+.features .right h3 {
+  font-size: 20px;
+  color: #db8505;
+  margin-bottom: 1rem;
+}
+
+.features .right p {
+  margin: 0;
+}
+
+.starbucks {
+  height: 81px;
+  background: #f19001;
+  margin: 1rem 0;
+  display: flex;
+  padding: 0 40px;
+}
+
+.starbucks p {
+  width: 55%;
+  margin: 6px 0;
+  color: #1d2129;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.white {
+  font-weight: 600;
+  color: #FFF;
+}
+
+.contact {
+  display: flex;
+  padding: 0 40px;
+}
+
+.contact a {
+  text-decoration: none;
+}
+
+.contact-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.contact-icon {
+  flex-shrink: 0;
+  margin-right: 1rem;
+}
+
+.corner {
+  width: 360px;
+  height: 260px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: url(./assets/part-3.png) 10% 35% no-repeat;
+}
